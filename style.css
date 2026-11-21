@@ -1,0 +1,311 @@
+/* ===== GLOBAL STYLING ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #080b14;
+    color: #ffffff;
+    line-height: 1.7;
+}
+
+:root {
+    --blue: #00d4ff;
+    --purple: #8b5cf6;
+    --card: #111827;
+    --text: #aab4c5;
+}
+
+/* ===== NAVIGATION ===== */
+
+header {
+    width: 100%;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(8, 11, 20, 0.95);
+    border-bottom: 1px solid #1e293b;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    color: var(--blue);
+    font-size: 25px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--blue);
+}
+
+/* ===== COMMON SECTIONS ===== */
+
+section {
+    padding: 90px 10%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 35px;
+    margin-bottom: 35px;
+    color: var(--blue);
+}
+
+section p {
+    color: var(--text);
+    font-size: 16px;
+}
+
+/* ===== HOME ===== */
+
+#home {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:
+        radial-gradient(circle at top right, #182b50, transparent 45%),
+        #080b14;
+}
+
+.welcome {
+    color: var(--blue);
+    letter-spacing: 4px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+#home h2 {
+    font-size: 55px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#home h2 span {
+    color: var(--blue);
+}
+
+#home h3 {
+    font-size: 20px;
+    color: #a78bfa;
+    margin-bottom: 20px;
+}
+
+#home p {
+    max-width: 650px;
+}
+
+/* ===== BUTTONS ===== */
+
+.button {
+    display: inline-block;
+    margin: 25px 8px 0;
+    padding: 12px 25px;
+    background: var(--blue);
+    color: #080b14;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+}
+
+.button.secondary {
+    background: transparent;
+    color: var(--blue);
+    border: 1px solid var(--blue);
+}
+
+/* ===== ABOUT ===== */
+
+#about {
+    background: #0d1320;
+}
+
+#about p {
+    max-width: 850px;
+    margin: auto;
+}
+
+/* ===== SKILLS ===== */
+
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.skill-card {
+    background: var(--card);
+    padding: 30px 20px;
+    border: 1px solid #263449;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-7px);
+    border-color: var(--blue);
+}
+
+.skill-card h3 {
+    color: var(--blue);
+    margin-bottom: 15px;
+}
+
+/* ===== EDUCATION ===== */
+
+#education {
+    background: #0d1320;
+}
+
+.education-card {
+    max-width: 650px;
+    margin: auto;
+    padding: 30px;
+    background: var(--card);
+    border-left: 4px solid var(--blue);
+    border-radius: 10px;
+}
+
+.education-card h3 {
+    color: var(--blue);
+    margin-bottom: 15px;
+}
+
+/* ===== PROJECTS ===== */
+
+.project-card {
+    max-width: 700px;
+    margin: 25px auto;
+    padding: 30px;
+    background: var(--card);
+    border: 1px solid #263449;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--purple);
+}
+
+.project-card h3 {
+    color: var(--blue);
+    margin-bottom: 15px;
+}
+
+.project-card span {
+    display: inline-block;
+    margin-top: 15px;
+    color: #a78bfa;
+}
+
+/* ===== CERTIFICATIONS ===== */
+
+#certifications {
+    background: #0d1320;
+}
+
+.certificate-card {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    background: var(--card);
+    border: 1px solid #263449;
+    border-radius: 12px;
+}
+
+.certificate-card h3 {
+    color: var(--blue);
+}
+
+/* ===== CONTACT ===== */
+
+.contact-details {
+    margin-top: 25px;
+}
+
+.contact-details p {
+    margin: 12px;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #05070d;
+    border-top: 1px solid #1e293b;
+}
+
+footer p {
+    color: var(--text);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    #home h2 {
+        font-size: 38px;
+    }
+
+    #home h3 {
+        font-size: 17px;
+    }
+
+    section {
+        padding: 65px 6%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    #home h2 {
+        font-size: 32px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+}
